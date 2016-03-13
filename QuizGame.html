@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Game</title>
+	<style type="text/css">
+		body{
+		color:black;
+		background-color: black;
+		text-align: center;
+		vertical-align: center;
+
+		background-image: url("gradient.png");
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	ol{
+		display: inline-block;
+    	text-align: center;
+	}
+
+	</style>
+	<script src="javascript2.js"></script>
+</head>
+<body>
+	<div id = "pic">
+		<img src="Seven-Dwarfs.jpg" alt="" style="width:550px;height:350px;">
+	</div>
+	<div id='timerDiv'>60 seconds</div>
+	<h2>
+	<input type="text" id='dwarfInput' onchange="checkdwarf()" disabled>
+	<div id="buttons">
+	<button id="start" onclick="startTimer()">Start</button>
+	<button id="pause" onclick="pauseTimer()">Pause</button>
+	<button id="end" onclick="endGame()">Reset</button></h2>
+	<h1>Seven Dwarves:</h1>
+	<h3>
+	<ol id="output" display="block"></ol>
+	</h3>
+</div>
+</body>
+</html>

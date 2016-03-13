@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Game</title>
+	<style type="text/css">
+		body{
+		color:black;
+		background-color: black;
+		text-align: center;
+		vertical-align: center;
+		font-family: "Courier New", sans-serif;
+		background-image: url("gradient.png");
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	ul{
+		display: inline-block;
+    	text-align: center;
+	}
+	</style>
+	<script src="javascript.js"></script>
+</head>
+<body>
+<input type="text" id='Input' onchange="checkDwarf()" disabled>
+<div id="buttons">
+<button id="start" onclick="startTimer()">Start</button>
+<button id="pause" onclick="pauseTimer()">Pause</button>
+<button id="end" onclick="endGame()">Reset</button>
+</div>
+<ol id="output" display="block"></ol>
+
+	<h1>Seven Dwarves:</h1>
+	<h2>
+	<ul id  = "result">
+		<li id = "one"></li>
+		<li id = "two"></li>
+		<li id = "three"></li>
+		<li id = "four"></li>
+		<li id = "five"></li>
+		<li id = "six"></li>
+		<li id = "seven"></li>
+
+	</ul>
+
+	<div id = "output">
+		<img src="Seven-Dwarfs.jpg" alt="" style="width:550px;height:350px;">
+	</div>
+	</h2>
+</body>
+</html>
