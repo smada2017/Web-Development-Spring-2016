@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	function change1(){document.getElementById("listview").checked=false}
+	function change2(){document.getElementById("dropdown").checked=false}
+</script>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			text-shadow:2px 2px red;text-align:center
+		}
+		form{
+			text-align: center;
+		}
+	</style>
+<body>
+<h1> Welcome to My Forum! </h1>
+<form>
+  First name:
+  <br>
+  <input type="text" name="firstname" placeholder = "Sai">
+  <br>
+  Last name:
+  <br>
+  <input type="text" name="lastname" placeholder = "Mada">
+  <br>
+
+<select name="select">
+  	<option value="value1"></option> 
+  	<option value="value2" selected>Value 2</option>
+  	<option value="value3">Value 3</option> 
+    
+</select>
+<br>
+<input type="radio" id="dropdown" value="1" onclick="change1()">Drop Down
+<input type="radio" id="listview" value="2" onclick="change2()" checked>List View
+
+
+</form>
+
+
+
+</body>
+</html>
