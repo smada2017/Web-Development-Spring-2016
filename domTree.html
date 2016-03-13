@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>DOM Tree Example</title>
+	<style type="text/css">
+		div{
+			background: black;
+			color: white;
+			border: circle 2px lightblue;
+			padding: 4px;
+			margin: 30px;
+		}
+		.outer{
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function turnBlue(event){
+			console.log(event.target);
+			event.target.style.backgroundColor = "0000FF";
+		}
+	</script>
+</head>
+<body onclick = "turnBlue(event)">
+	<div class = "outer">
+		<div>Poe1</div>
+		<div>Poe2</div>
+		<div>Poe3</div>
+		<div>Poe4</div>
+	</div>
+</body>
+</html>
